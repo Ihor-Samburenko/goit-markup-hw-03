@@ -11,8 +11,11 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* logo */
@@ -28,6 +31,16 @@ ul {
 
 span {
   color: #2196f3;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  background-color: #ccc;
 }
 
 /* site nav */
@@ -68,21 +81,30 @@ span {
 
 /* hero */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--main-text-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
+}
+
+.section {
+  margin-top: 94px;
 }
 
 /* section */
 .section-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -91,8 +113,23 @@ span {
   text-align: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* features */
 .features .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -101,6 +138,8 @@ span {
 }
 
 .features .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -109,18 +148,22 @@ span {
 /* members */
 .members {
   background-color: #f5f4fa;
+  margin-top: 94px;
 }
 
 /* team */
 .team .team-title {
   color: var(--title-text-color);
-
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .team .proff {
+  margin-top: 10px;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -128,6 +171,12 @@ span {
 
 /* button */
 .button {
+  display: inline-block;
+  padding: 11px 32px;
+  min-width: 216px;
+  text-align: center;
+  border-radius: 4px;
+
   color: var(--main-text-color);
   cursor: pointer;
 }
@@ -152,6 +201,9 @@ span {
 /* футер */
 footer {
   background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   font-weight: 400;
   font-size: 14px;
@@ -182,6 +234,11 @@ footer {
 }
 
 .navigation .nav-map {
+  display: inline-block;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -192,6 +249,11 @@ footer {
 }
 
 .navigation .nav-auth {
+  display: inline-block;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -211,6 +273,10 @@ footer {
 }
 
 /* стилі для portfolio */
+
+.button-group {
+  margin-bottom: 34px;
+}
 
 .primery.button {
   background-color: var(--accent-color);
@@ -244,7 +310,14 @@ footer {
   color: #ffffff;
 }
 
+.project {
+  margin-top: 94px;
+}
+
 .project .examples {
+  margin-top: 20px;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -255,6 +328,9 @@ footer {
 }
 
 .project .type {
+  margin-top: 4px;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
