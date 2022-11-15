@@ -137,9 +137,12 @@ span {
 /* hero */
 .hero-title {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 
   color: var(--main-text-color);
-
+  min-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -155,16 +158,15 @@ span {
   text-align: center;
 }
 
-/* .section {
-  margin-top: 94px;
-} */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* section */
 .section-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -192,18 +194,16 @@ span {
   display: flex;
 }
 
-.features .item + .item {
+.features .item-features + .item-features {
   margin-left: 30px;
 }
 
-.features .item {
+.features .item-features {
   width: 270px;
 }
 .features .title {
   margin-top: 0;
   margin-bottom: 10px;
-
-  padding-top: 94px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -226,25 +226,33 @@ span {
   display: flex;
 }
 
-.about .item + .item {
+.about .item-descr + .item-descr {
   margin-left: 30px;
 }
 
 /* members */
 .members {
   background-color: #f5f4fa;
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* team */
 
 .team {
   display: flex;
-  padding-bottom: 94px;
 }
 
-.team .item + .item {
+.team .item-people + .item-people {
   margin-left: 30px;
+}
+
+.item-people {
+  height: 368px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .team-title {
@@ -270,16 +278,24 @@ span {
   text-align: center;
 }
 
+/* .item {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+} */
+
 /* button */
 .button {
   display: inline-block;
   padding: 11px 32px;
-  min-width: 216px;
+  min-width: 73px;
 
   text-align: center;
   border-radius: 4px;
   color: var(--main-text-color);
   cursor: pointer;
+  border: none;
 }
 
 .main.button:hover,
